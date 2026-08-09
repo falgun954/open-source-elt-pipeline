@@ -1,0 +1,7 @@
+*.duckdb
+*.duckdb.wal
+superstore.csv
+customers.csv
+my_transformations/target/
+my_transformations/logs/
+my_transformations/dbt_packages/
