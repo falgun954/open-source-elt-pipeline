@@ -19,16 +19,18 @@ A fully open-source ELT (Extract, Load, Transform) pipeline built as a local, co
 
 ## Project structure
 
+```
 elt-project/
-├── pipeline.py # Extract + load script (CSV → DuckDB via dlt)
-├── customers_pipeline.duckdb # Local warehouse (gitignored)
+├── pipeline.py
+├── customers_pipeline.duckdb
 └── my_transformations/
-├── models/
-│ ├── stg_customers.sql # Staging: cleaned customer data
-│ ├── stg_orders.sql # Staging: cleaned order data
-│ ├── mart_sales_by_region.sql # Mart: sales/profit aggregated by region + category
-│ └── schema.yml # dbt tests (not_null, unique)
-└── dbt_project.yml
+    ├── models/
+    │   ├── stg_customers.sql
+    │   ├── stg_orders.sql
+    │   ├── mart_sales_by_region.sql
+    │   └── schema.yml
+    └── dbt_project.yml
+```
 
 ## Key finding
 
